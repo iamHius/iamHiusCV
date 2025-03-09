@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #000000;
+    color: #fff;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.home_section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    padding: 2vh 2vw;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 2vw;
+}
+
+.nav_contact_link {
+    height: auto;
+    padding: 0.5em 1.5em;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.nav_contact_link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.sub_hero_text {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.sub_hero_text p {
+    width: 35vw;
+    margin-top: 5vh;
+}
+
+.hero_text {
+    font-family: "Anton", sans-serif;
+    font-size: 10vw;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.scroll_btn {
+    position: absolute;
+    bottom: 2vh;
+    right: 3vw;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.about_section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about_section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.3);
+    z-index: 0;
+}
+
+.about_span {
+    z-index: 1;
+    margin-left: 2vw;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.about_content {
+    z-index: 1;
+    margin-bottom: -30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.about_topics {
+    width: 95%;
+    display: flex;
+    gap: 4vw;
+    text-transform: uppercase;
+}
+
+.about_text {
+    font-size: 1.2vw;
+    width: 95%;
+    text-align: justify;
+}
+
+.skills {
+    z-index: 1;
+    padding: 0 2.5%;
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    font-size: 2vw;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3vw;
+    overflow: hidden;
+}
+
+.projects_section {
+    font-family: "Anton", sans-serif;
+    width: 100%;
+    height: 100vh;
+    padding: 5vh 2vw;
+}
+
+.project_title {
+    font-size: 3.5vw;
+    text-transform: uppercase;
+}
+
+.projects_container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 35vw 1fr;
+    grid-gap: 1vw;
+}
+
+.sub_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+
+.project {
+    position: relative;
+    padding: 1vw;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    transition: filter 0.3s ease;
+}
+
+.project img:hover {
+    filter: brightness(0.7);
+}
+
+.contact_section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.contact_section span {
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5vw;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact_section span:hover {
+    color: #00c1d4;
+}
+
+.contact_section span:nth-child(5) {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border: 1px solid white;
+    padding: 1vw 1.5vw;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact_section span:nth-child(5):hover {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    padding: 0 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12.5vw;
+    align-items: center;
+    font-size: 1vw;
+    background: #111;
+}
+
+.footer_title {
+    font-size: 4vw;
+    font-family: "Anton", sans-serif;
+    line-height: 1;
+    color: #00c1d4;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.footer div span {
+    cursor: pointer;
+    transition: text-decoration 0.3s ease;
+}
+
+.footer div span:hover {
+    text-decoration: underline;
+}
